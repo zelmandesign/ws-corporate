@@ -1,0 +1,67 @@
+.content-info {
+  min-height: 300px;
+  background: $grey-bg;
+  display: flex;
+  align-items: center;
+
+  @include media-breakpoint-down(md) {
+    min-height: 250px;
+  }
+
+  .container {
+    max-width: 1450px;
+
+    .row:nth-child(-n+5) {
+      display: flex;
+      align-items: center;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 0;
+    }
+  }
+
+  .nav a {
+    color: #fff;
+    padding: 0.125rem 0;
+    margin: 0;
+    letter-spacing: 2px;
+    font-size: 0.7em;
+    text-transform: uppercase;
+
+    &:hover { color: $red; }
+
+    &:active { color: $red; }
+
+    @extend .nav-link;
+
+    @include media-breakpoint-down(md) {
+      font-size: 0.65em;
+    }
+  }
+}
+
+.copy {
+  background: darken($color: #343a3f, $amount: 10);
+  font-size: 0.7em;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+  }
+
+  .payments {
+    display: flex;
+    align-items: center;
+    width: 125px;
+    justify-content: space-between;
+  }
+
+  .payments > * {
+    font-size: 1.75em;
+  }
+}

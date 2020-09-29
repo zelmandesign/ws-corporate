@@ -1,0 +1,205 @@
+body {
+  font-family: "Lato", sans-serif;
+  color: #222;
+  background-color: #f9fafb;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  font-weight: 700;
+}
+
+.line {
+  height: 5px;
+  width: 200px;
+  background-color: #fff;
+  margin: 1rem 0;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(40, 43, 65, 0.5);
+
+  @include media-breakpoint-down(sm) {
+    width: 150px;
+  }
+}
+
+.line-long {
+  margin: 2rem 0 2rem 0;
+}
+
+.home-bigger {
+  color: #fff;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 50px;
+  text-shadow: 0 4px 20px rgba(40, 43, 65, 0.95);
+}
+
+.form-control {
+  border-radius: 0;
+  background: transparent;
+  border: 2px solid #fff;
+}
+
+.btn-danger {
+  border: 0;
+  border-radius: 0;
+  height: auto;
+  padding: 0.75rem 1.4em;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 2px;
+  max-width: 311px;
+}
+
+// Location Finder
+
+#wpsl-search-input {
+  width: 179px;
+  height: 35px;
+  padding: 7px 12px;
+  font-size: 100%;
+  margin: 0;
+}
+
+.wpsl-dropdown .wpsl-selected-item,
+.wpsl-dropdown li,
+.wpsl-selected-item {
+  list-style: none;
+  padding: 8px 12px !important;
+  margin: 0 !important;
+}
+
+#wpsl-search-btn {
+  padding: 0.5rem 0 !important;
+  letter-spacing: 3px !important;
+  font-size: 0.85em !important;
+  font-weight: 700 !important;
+  width: 125px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  height: 37.5px !important;
+  text-transform: uppercase !important;
+  background-color: $red !important;
+  background-repeat: repeat-x !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  color: #fff !important;
+}
+
+// WP Shopify Plugin
+
+.wps-product-image {
+  @extend .img-fluid;
+}
+
+.wps-items {
+  text-align: center !important;
+}
+
+.wps-quantity-input label {
+  font-size: 0.9em !important;
+  font-weight: 700 !important;
+}
+
+.wpshopify .wps-product-quantity {
+  margin: 0;
+  text-align: center;
+  max-width: 50px !important;
+  visibility: hidden;
+  border: 1px solid #c7c7c7;
+  border-radius: 0;
+  padding: 4px 7px !important;
+  font-size: 0.8em !important;
+}
+
+.tippy-content li {
+  font-size: 0.9em !important;
+}
+
+.wps-btn {
+  border-radius: 0 !important;
+  padding: 1em 1.4em;
+  // width: calc(100% - 2.8em) !important;
+  height: auto;
+  font-weight: 400;
+  position: relative;
+  font-size: 0.9em !important;
+  letter-spacing: 2px;
+}
+
+.wps-total-amount {
+  font-weight: 700;
+  text-align: right;
+  font-size: 22px !important;
+}
+
+.wps-btn-checkout {
+  font-size: 0.7em !important;
+}
+
+.wps-products-title {
+  text-align: center !important;
+}
+
+@include media-breakpoint-down(md) {
+  .wpshopify .wps-quantity-decrement,
+  .wpshopify .wps-quantity-increment,
+  .wps-cart-item__quantity,
+  .wpshopify .wps-cart-lineitem-quantity {
+    font-size: 16px !important;
+    width: 35px !important;
+    height: 35px !important;
+  }
+}
+
+// Gift Cards Container
+
+.wpshopify [data-wps-is-client-component-wrapper] {
+  box-sizing: border-box;
+  margin: 0 !important;
+}
+
+.wpshopify .wps-container {
+  padding: 0 !important;
+}
+
+@media screen and (max-width: 500px) {
+  .wpshopify .wps-items .wps-item {
+    margin-bottom: 0 !important;
+  }
+}
+
+.gift-cards {
+  .btn-danger {
+    max-width: none;
+    width: 100% !important;
+    margin-top: -5px;
+  }
+
+  .wpshopify .wps-container {
+    padding: 0 !important;
+  }
+
+  #fluid-fix {
+    padding-right: 30px;
+    padding-left: 30px;
+
+    @include media-breakpoint-down(sm) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}

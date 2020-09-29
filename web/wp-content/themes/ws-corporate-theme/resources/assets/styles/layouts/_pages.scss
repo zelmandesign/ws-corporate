@@ -1,0 +1,258 @@
+.page-header {
+  min-height: 350px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 75px;
+  padding: 0 20px;
+
+  h1 {
+    color: #fff;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 50px;
+    text-shadow: 0 4px 20px rgba(40, 43, 65, 0.95);
+    letter-spacing: 3px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 2.5em;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    background-attachment: scroll;
+  }
+}
+
+.about-us {
+  .page-header {
+    min-height: 75vh;
+  }
+}
+
+.locations {
+  .page-header {
+    margin-bottom: 15px;
+  }
+
+  .container-fluid {
+    font-size: 16px;
+  }
+}
+
+#franchise-logos {
+  max-width: 760px;
+}
+
+#main {
+  min-height: 125vh;
+
+  @include bg-fullscreen-items-center;
+
+  @include media-breakpoint-down(md) {
+    background-attachment: scroll !important;
+    align-items: flex-end;
+  }
+
+  .flex-wrapper {
+    max-width: 1250px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  @include media-breakpoint-down(sm) {
+    min-height: 100vh;
+  }
+
+  @include media-breakpoint-down(sm) {
+    min-height: 85vh;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 5em;
+    text-shadow: 0 4px 20px rgba(40, 43, 65, 0.5);
+    line-height: 1em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    @include media-breakpoint-down(md) {
+      font-size: 5em;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 3em;
+    }
+  }
+
+  p {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    text-shadow: 0 4px 20px rgba(40, 43, 65, 0.5);
+    line-height: 1em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 2em;
+    }
+  }
+}
+
+#logos {
+  padding: 50px 0;
+
+  .container {
+    max-width: 960px;
+  }
+}
+
+#verbiage {
+  padding: 75px 0 125px 0;
+
+  h1 {
+    font-size: 2.75em;
+    font-family: "Abril Fatface", cursive;
+    letter-spacing: 5px;
+    color: #444;
+
+    @include media-breakpoint-down(md) {
+      font-size: 2em;
+    }
+  }
+
+  .stronger {
+    font-size: 1.3em;
+
+    @include media-breakpoint-down(md) {
+      font-size: 1.1em;
+    }
+  }
+
+  .line {
+    text-align: center;
+    box-shadow: none;
+    background: #444;
+    margin: 1rem 0;
+    height: 2.5px;
+  }
+
+  .line-long {
+    border-top: 1px dashed $grey;
+    width: 100%;
+    margin: 2rem 0 5rem 0;
+  }
+}
+
+#cards {
+  padding: 0 0 50px 0;
+
+  .container {
+    max-width: 1600px;
+  }
+}
+
+#buffet-hero {
+  min-height: 65vh;
+  padding: 0 15px;
+
+  @include bg-fullscreen-items-center;
+
+  @include media-breakpoint-down(md) {
+    background-attachment: scroll !important;
+    font-size: 0.6em;
+    min-height: 75vh;
+  }
+
+  .container {
+    max-width: 960px;
+  }
+
+  .line {
+    height: 2px;
+    width: 150px;
+  }
+}
+
+#locations-home {
+  position: relative;
+  min-height: 60vh;
+  color: #fff;
+  font-size: 0.8em;
+  letter-spacing: 3px;
+  text-align: center;
+
+  .background-after {
+    position: absolute;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    -moz-background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-attachment: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -o-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(100%);
+    filter: gray;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+
+    @include media-breakpoint-down(md) {
+      background-attachment: scroll !important;
+      font-size: 0.7em;
+    }
+  }
+
+  @include bg-fullscreen-items-center;
+
+  .container {
+    max-width: 660px;
+  }
+
+  .line {
+    height: 2px;
+    width: 150px;
+    margin-bottom: 3rem;
+  }
+
+  .form-control-lg {
+    height: calc(2.25em + 1rem + 2px);
+  }
+
+  input {
+    color: #fff;
+  }
+
+  input:focus {
+    background: transparent;
+    outline: none;
+  }
+
+  ::placeholder {
+    color: #fff;
+  }
+
+  label {
+    display: none !important;
+  }
+
+  .btn-danger {
+    padding: 0.5rem 0;
+    letter-spacing: 3px;
+    font-size: 0.85em;
+    font-weight: 700;
+    width: 125px;
+    border: 0;
+    border-radius: 0;
+    height: 40px;
+    text-transform: uppercase;
+  }
+}

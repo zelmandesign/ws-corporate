@@ -1,0 +1,4 @@
+name: western-sizzling-corporate
+recipe: wordpress
+config:
+  webroot: web
